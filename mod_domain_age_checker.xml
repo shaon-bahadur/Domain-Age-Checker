@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>Domain Age Checker</name>
+	<creationDate>August 2022</creationDate>
+	<author>Tech Space Hub</author>
+	<authorEmail>talk@techspacehub.com</authorEmail>
+	<authorUrl>https://techspacehub.com/</authorUrl>
+	<copyright>Copyright (C) 2022 Tech Space Hub, All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.0.1</version>
+	<description>MOD_DOMAIN_AGE_CHECKER_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_domain_age_checker">mod_domain_age_checker.php</filename>
+		<filename module="mod_domain_age_checker">helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>res</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/mod_domain_age_checker.ini</language>
+		<language tag="en-GB">language/en-GB/mod_domain_age_checker.sys.ini</language>
+	</languages>
+
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_DOMAIN_AGE_CHECKER_HTML" />
+	<config>
+		<fields name="params">
+			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field name="backgroundcolor" 
+					type="color" 
+					default="#dde4ea" 
+					format="rgba"
+					label="MOD_DOMAIN_AGE_CHECKER_BACKGROUND_LABEL"
+					description="MOD_DOMAIN_AGE_CHECKER_BACKGROUND_DESC" 
+				/>
+				<field name="subtitletext" 
+					type="text" 
+					default="Enter domain name without (https://)" 
+					label="MOD_DOMAIN_AGE_CHECKER_SUBTITLE_LABEL" 
+					description="MOD_DOMAIN_AGE_CHECKER_SUBTITLE_DESC"
+				/>
+				<field name="errormessage" 
+					type="text" 
+					default="At this time, we have not come across any records containing this domain or TLD. Alternate domain names are welcome." 
+					label="MOD_DOMAIN_AGE_CHECKER_ERROR_MESSAGE_LABEL" 
+					description="MOD_DOMAIN_AGE_CHECKER_ERROR_MESSAGE_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="Domain Age Checker Updates">https://techspacehub.com/extensionsupdate/domainagechecker/domainagecheckerupdates.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,117 @@
+.domainAgeCheckWrapper .domain-age-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    height: 64px;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 4%);	
+}
+.domainAgeCheckWrapper .domain-age-search #domain_age_input{
+    border-radius: 6px;
+    padding-left: 12px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #001659;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+	margin-right: 10px;
+	outline: 0 !important;
+}
+.domainAgeCheckWrapper .domain-age-search #domain_age_check_landing{
+    min-width: 55px;
+    width: 146px;
+    height: 48px;
+    cursor: pointer;
+    border: none;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: linear-gradient(90deg,#0a3c69 -6.93%,#2196f3 108.23%);
+    transition: .2s;	
+}
+.domainAgeCheckWrapper .domain-age-search #domain_age_check_landing .arrow{
+    height: 16px;
+    width: auto;	
+}
+.domainAgeCheckWrapper .domain-age-search #domain_age_check_landing .loading{
+	width: 45px;
+    height: 45px;
+}
+.domainAgeCheckWrapper .domain-age-search #domain_age_check_landing img {
+    transition: .2s;
+    width: 31px;
+    height: 22px;
+}
+.domainAgeCheckWrapper .domain-age-search #domain_age_check_landing:hover img:first-child {
+    transform: translate3d(2px,0,0);
+}
+.domainAgeCheckWrapper .domain-age-search #domain_age_input:focus-visible {
+	background: #fff9c6;
+}
+.domainAgeCheckWrapper .domainSearchResult{
+    margin-top: 40px;
+    margin-bottom: 15px;	
+}
+.domainAgeCheckWrapper .domainSearchResult .errorNotFound{
+	color: red;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    line-height: 20px;
+}
+.domainAgeCheckWrapper .resultTable th {
+    text-align: left;
+    width: 35%;
+    background: #f7f7f7;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(8 36 67 / 40%);
+}
+.domainAgeCheckWrapper .resultTitle{
+    font-size: 25px;
+    color: #10558f;
+    text-align: center;
+    border-bottom: 1px solid #10558f;
+    padding-bottom: 5px;
+    margin-bottom: 50px;	
+}
+.domainAgeCheckWrapper .domain-heading-title{
+    margin-bottom: 20px;
+    margin-top: 5px;	
+}
+
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+table, td, th {
+    border: 1px solid rgba(0,0,0,.1);
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td, th {
+    padding: 8px;
+    border-width: 0 1px 1px 0;
+}
