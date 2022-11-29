@@ -9,13 +9,10 @@ Version: 1.0.2
 Changelog:
 
 = 1.0.0 - 21/08/2022 =
-
 Initial Release
 
 = 1.0.1 - 03/11/2022 =
-
 Bug fixing
 
 = 1.0.2 - 29/11/2022 =
-
 PHP 8 compatibility
