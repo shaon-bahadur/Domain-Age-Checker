@@ -10,7 +10,7 @@ defined('_JEXEC') or die;
 
 class ModDomainAgeCheckerHelper
 {
-    public function getDataAjax()
+    public static function getDataAjax()
     {
 		$WHOIS_SERVERS = array(
 			"com" => array("whois.verisign-grs.com", "/Creation Date:(.*)/", "/Registry Expiry Date:(.*)/", "/Updated Date:(.*)/", "/Registrar:(.*)/", "/Name Server:(.*)/"), 
