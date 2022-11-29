@@ -41,7 +41,7 @@ class ModDomainAgeCheckerHelper
 			"nu" => array("whois.iis.nu", "/created:(.*)/", "/expires:(.*)/", "/modified:(.*)/", "/registrar:(.*)/", "/nserver:(.*)/")
 		);
 		$domain     =   JFactory::getApplication()->input->get('domain_age_input');
-		$domain     =   preg_replace('/\s/', '', $domain);
+		$domain     =   preg_replace('/\s/', '', (string)$domain);
         $domain = trim($domain); 
         if (substr(strtolower($domain), 0, 7) == "http://")
             $domain = substr($domain, 7); 
@@ -120,7 +120,7 @@ function QueryWhoisServer($whoisserver, $domain)
 		$rows = explode("\n", $out);
 		foreach ($rows as $row) {
 			$row = trim($row);
-			if (($row != '') && ($row{0} != '#') && ($row{0} != '%')) {
+			if (($row != '') && ($row[0] != '#') && ($row[0] != '%')) {
 				$res .= $row . "\n";
 			}
 		}
